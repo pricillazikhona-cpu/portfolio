@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zikhona Bam</title>
+    
+    <link rel="stylesheet" href="templatemo-glossy-touch.css">
+<!--
+
+TemplateMo 592 glossy touch
+
+https://templatemo.com/tm-592-glossy-touch
+
+-->
+    <style>
+        /* Optional styling for skills grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .skill-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 12px 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 500;
+            transition: transform 0.2s ease, background 0.2s ease;
+        }
+        .skill-item:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <!-- SINGLE NAVIGATION HEADER -->
+    <header>
+        <div class="container">
+            <nav class="glass">
+                <div class="logo" onclick="showPage('home')">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 48 48" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Grid of circles with varying sizes -->
+                            <circle cx="16" cy="16" r="5" opacity="0.9"/>
+                            <circle cx="32" cy="16" r="4" opacity="0.8"/>
+                            <circle cx="16" cy="32" r="4" opacity="0.7"/>
+                            <circle cx="32" cy="32" r="5" opacity="0.85"/>
+                            <!-- Small accent dots -->
+                            <circle cx="24" cy="8" r="2" opacity="1"/>
+                            <circle cx="8" cy="24" r="2" opacity="0.9"/>
+                            <circle cx="40" cy="24" r="2" opacity="0.9"/>
+                            <circle cx="24" cy="40" r="2" opacity="1"/>
+                            <!-- Tiny corner dots -->
+                            <circle cx="8" cy="8" r="1" opacity="0.6"/>
+                            <circle cx="40" cy="8" r="1" opacity="0.6"/>
+                            <circle cx="8" cy="40" r="1" opacity="0.6"/>
+                            <circle cx="40" cy="40" r="1" opacity="0.6"/>
+                        </svg>
+                    </div>
+                    <span></span>
+                </div>
+                <div class="nav-links">
+                    <a href="#" onclick="showPage('home')" class="active">Home</a>
+                    <a href="#" onclick="showPage('about')">About</a>
+                    <a href="#" onclick="showPage('services')">Projects</a>
+                    <a href="#" onclick="showPage('skills')">Skills</a>
+                    <a href="#" onclick="showPage('contact')">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HOME PAGE -->
+    <div id="home" class="page active">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="hero glass">
+                    <div class="hero-image">
+                        <img src="images/zikhona.jpg" alt="Modern Technology Interaction" />
+                    </div>
+                    <div class="hero-content">
+                        <h1>Zikhona Bam</h1>
+                        <p>IT Infastructure & Support Engineering </p>
+                        <a href="#" class="cta-button" onclick="showPage('about')">Learn More</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT PAGE -->
+    <div id="about" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="about-content">
+                    <div class="about-text glass">
+                        <h2>About me</h2>
+                        <p> I Hold a National Senior Certificate (Matric) as a strong academic foundation, complemented by certifications in CompTIA A+ and Network+. Skilled IT professional with expertise in PC hardware upgrades, troubleshooting, and network configuration, with hands-on experience improving system performance, configuring secure networks, and providing technical support. Passionate about integrating automation and AI tools for IT efficiency. Completed multiple Coursera professional development programs and AI-focused courses, enhancing knowledge in machine learning, data analysis, and emerging technologies to stay ahead in the evolving IT landscape.</p>
+</p>
+
+                    </div>
+                    <div class="stats">
+                        <div class="stat-card glass">
+                            <div class="stat-number">6</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                    </div>
+
+
+                    <!-- Download CV Button under About -->
+                            <div class="cv-download glass" style="margin-top:20px; text-align:center;">
+                                <a href="docs/Z.P.B CV.docx" class="btn" download>📄 Download CV</a>
+                            </div>
+
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES PAGE -->
+    <div id="services" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="hero glass">
+                    <h1>Projects</h1>
+                </section>
+
+                <section class="services-grid">
+                    <!-- Project 1 -->
+                    <div class="service-card glass">
+                        <div class="service-header">
+                            <div class="service-icon">🎨</div>
+                            <h3>AI Study Buddy</h3>
+                        </div>
+                        <p>AI Study Buddy – an accessible Retrieval Augmented Generation-powered chatbot with domain-specific knowledge, summarization, and speech support.</p>
+                        <div class="service-links">
+                            <a href="https://github.com/Agristorm/AI-Study-buddy" target="_blank" class="btn">GitHub</a>
+                            <a href="https://ai-study-buddy-xi.vercel.app/" target="_blank" class="btn">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="service-card glass">
+                        <div class="service-header">
+                            <div class="service-icon">💻</div>
+                            <h3>Adult census</h3>
+                        </div>
+                        <p>This project aims to build a machine learning model that predicts whether an individual earns more than $50K per year (binary classification)</p>
+                        <div class="service-links">
+                            <a href="https://github.com/Agristorm/Adult-Census-Bias-Analysis-Model" target="_blank" class="btn">GitHub</a>
+                            <a href="https://colab.research.google.com/drive/1kSP9VCLymslnjaquDqMS8z0tgTykR80Q?usp=sharing" target="_blank" class="btn">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="service-card glass">
+                        <div class="service-header">
+                            <div class="service-icon">📱</div>
+                            <h3>Weather AI</h3>
+                        </div>
+                        <p>Weather AI is a smart application that uses artificial intelligence and API integrations to provide real-time weather updates and forecasts. The system processes live meteorological data and delivers location-specific predictions in a simple, user-friendly interface.</p>
+                        <div class="service-links">
+                            <a href="https://github.com/pricillazikhona-cpu/weather-ai" target="_blank" class="btn">GitHub</a>
+                            <a href="https://weather-ai-ivory.vercel.app/" target="_blank" class="btn">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="service-card glass">
+                        <div class="service-header">
+                            <div class="service-icon">🚀</div>
+                            <h3>SmartEdu-Gr12</h3>
+                        </div>
+                        <p>SmartEdu is an AI-powered educational content generator designed for Grade 12 students. It creates customized learning materials across different subjects, helping students understand complex topics, practice with quizzes, and prepare effectively for exams.</p>
+                        <div class="service-links">
+                            <a href="https://github.com/Agristorm/SmartEdu-Gr12-contentCreatorr" target="_blank" class="btn">GitHub</a>
+                            <a href="https://www.figma.com/make/dS0zWAWOKto8NYDY5rmImF/SmartEdu-Grade-12-Content-Generator?node-id=0-1&p=f&t=teZfrzLIlb6Op6Kc-0&fullscreen=1" target="_blank" class="btn">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="service-card glass">
+                        <div class="service-header">
+                            <div class="service-icon">☁️</div>
+                            <h3>AI Resume Builder</h3>
+                        </div>
+                        <p>The AI Resume Builder & CV Reviewer is an intelligent web application that helps users create professional resumes automatically and review existing CVs using AI.</p>
+                        <div class="service-links">
+                            <a href="https://github.com/Agristorm/AI-Resume-Biulder" target="_blank" class="btn">GitHub</a>
+                            <a href="https://bmokgola.github.io/resume-/" target="_blank" class="btn">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="service-card glass">
+                        <div class="service-header">
+                            <div class="service-icon">🔐</div>
+                            <h3>Apple Disease Detection</h3>
+                        </div>
+                        <p>The Apple Disease Detector is an AI-powered system designed to help farmers and agricultural experts identify diseases in apple crops quickly and accurately. Using image classification and deep learning, the system analyzes leaf and fruit images to detect disease presence and provide actionable recommendations for treatment.</p>
+                        <div class="service-links">
+                            <a href="https://github.com/Agristorm/Apple-Disease-Detector-CropCareAI-" target="_blank" class="btn">GitHub</a>
+                            <a href="https://blog-thin-05039763.figma.site/" target="_blank" class="btn">Live Demo</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-<!-- TECHNICAL SKILLS PAGE -->
+<div id="skills" class="page">
+    <div class="container">
+        <div class="content-wrapper">
+            <section class="skills-section glass">
+                <h2>Technical Skills</h2>
+
+                <div class="skills-grid">
+                    <div class="skill-item">💻 HTML & CSS</div>
+                    <div class="skill-item">⚡ JavaScript (ES6+)</div>
+                    <div class="skill-item">🖥️ PC Upgrading & Repair</div>
+                    <div class="skill-item">🔧 Hardware Troubleshooting</div>
+                    <div class="skill-item">🔧 Git & GitHub</div>
+                    <div class="skill-item">🗄️ SQL & Databases</div>
+                    <div class="skill-item">🌐 Network Configuration (CompTIA Network+)</div>
+                    <div class="skill-item">⚡ IT Support & System Maintenance (CompTIA A+)</div>
+                    <div class="skill-item">🤖 Automation & AI Tools</div>
+                    <div class="skill-item">🛠️ IT Infrastructure & Support</div>
+                
+                </div>
+
+                <!-- Separate Professional Skills section -->
+                <h2>Professional Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">🗣️ Communication Skills</div>
+                    <div class="skill-item">🤝 Collaboration & Teamwork</div>
+                    <div class="skill-item">🧠 Critical Thinking & Problem Solving</div>
+                    <div class="skill-item">🔄 Adaptability & Resilience</div>
+                    <div class="skill-item">⏳ Time Management & Productivity</div>
+                    <div class="skill-item">👩‍💼 Leadership & Management Foundations</div>
+                    <div class="skill-item">💡 Emotional Intelligence</div>
+                    <div class="skill-item">🌐 Career Development & Networking</div>
+                    <div class="skill-item">💻 Digital Fluency</div>
+                    <div class="skill-item">⚖️ Professional Ethics & Workplace Etiquette</div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+
+    <!-- CONTACT PAGE -->
+    <div id="contact" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="contact-grid">
+                    <div class="contact-info glass">
+                        <h2>Connect With Me</h2>
+
+                        <!-- GitHub -->
+                        <div class="contact-item">
+                            <div class="contact-item-icon">💻</div>
+                            <div class="contact-item-text">
+                                <h4>GitHub</h4>
+                                <p><a href="https://github.com/pricillazikhona-cpu" target="_blank">github.com/pricillazikhona-cpu</a></p>
+                            </div>
+                        </div>
+
+                             <!-- GitHub -->
+                        <div class="contact-item">
+                            <div class="contact-item-icon">💻</div>
+                            <div class="contact-item-text">
+                                <h4>Johannesburg</h4>
+                                <p>2146 Poerima Street Westonaria Borwa Phase 2 1779</a></p>
+                            </div>
+                        </div>
+
+                        <!-- LinkedIn -->
+                        <p>Connect with me on LinkedIn: 
+                            <a href="https://www.linkedin.com/in/zikhona-pricilla-5466b7375" target="_blank" rel="noopener noreferrer">
+                                Zikhona Priscilla
+                            </a>
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- SINGLE FOOTER -->
+    <div id="footer">
+        <div class="container">
+            <footer class="glass">
+                <div class="footer-content">
+                    <div class="copyright">
+                        &copy; 2025 
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+<script src="templatemo-glossy-touch.js"></script>
+</body>
+</html>
